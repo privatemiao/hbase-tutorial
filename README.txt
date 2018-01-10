@@ -67,7 +67,8 @@ Hadoop
     hdfs namenode -format
 
     启动 只在主节点上运行：
-    sbin/start-all.sh
+    sbin/start-dfs.sh
+    sbin/start-yarn.sh
 
     验证 WEBUI
     node1:50070

@@ -18,7 +18,7 @@
 
 
 
-node1	NameNode/DataNode	ResourceManager/NodeManager
+node1	NameNode	ResourceManager
 node2	DataNode	NodeManager
 node3	DataNode	NodeManager
 
@@ -34,7 +34,7 @@ Hadoop 安装
             <value>/root/data/hadoop/tmp/hadoop-root</value>
         </property>
         ______________________________________________________
-        node1: 当前所在机器名
+        node1: 主节点机器名
 
     2、hdfs-site.xml
         <property>

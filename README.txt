@@ -14,6 +14,7 @@
     192.168.137.10	node1.example.com	node1
     192.168.137.20	node2.example.com	node2
     192.168.137.30	node3.example.com	node3
+	192.168.137.40	node4.example.com	node4
 
 
 
@@ -21,6 +22,7 @@
 node1	NameNode	ResourceManager
 node2	DataNode	NodeManager
 node3	DataNode	NodeManager
+node4	DataNode	NodeManager
 
 Hadoop 安装
     1、core-site.xml
@@ -67,11 +69,11 @@ Hadoop 安装
         node1 主的 resourcemanager 机器名
 
     5、slaves
-            node1
             node2
             node3
+			node4
         ______________________________________________________
-        node1、ndoe2、ndoe3 从节点
+        node2、ndoe3、ndoe4 从节点
 
     对 NameNode 格式化：只在主节点上执行
     hdfs namenode -format

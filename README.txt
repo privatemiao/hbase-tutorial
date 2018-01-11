@@ -81,6 +81,17 @@ Hadoop 安装
     启动 只在主节点上运行：
     start-dfs.sh
     start-yarn.sh
+	
+	node1:
+		[root@node1 ~]# jps
+		SecondaryNameNode
+		NameNode
+		ResourceManager
+	nodex:
+		[root@node2 app]# jps
+		NodeManager
+		DataNode
+		
 
     验证 WEBUI
     node1:50070

@@ -114,5 +114,24 @@ HBase
         |___________________________________________________|
 
     安装
-
-
+		1、hbase-env.sh
+			>export JAVA_HOME=/root/app/jdk1.8.0_121
+			>export HBASE_MANAGES_ZK=false
+		2、hbase-site.xml
+			<property>
+				<name>hbase.rootdir</name>
+				<value>hdfs://node1.example.com/hbase</value>
+			</property>
+			<property>
+				<name>hbase.cluster.distributed</name>
+				<value>true</value>
+			</property>
+			<property>
+				<name>hbase.zookeeper.quorum</name>
+				<value>node2.example.com,node3.example.com,node4.example.com</value>
+			</property>
+		3、regionservers
+			node2
+			node3
+			node4
+			
